@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Hangman</h1>
+    <svg id="figure" viewBox="0 0 200 220" aria-label="Hangman drawing">
+      <g class="frame">
+        <line x1="20" y1="210" x2="120" y2="210"/>
+        <line x1="70" y1="210" x2="70" y2="20"/>
+        <line x1="70" y1="20" x2="150" y2="20"/>
+        <line x1="150" y1="20" x2="150" y2="45"/>
+      </g>
+      <g class="body">
+        <circle id="p1" cx="150" cy="62" r="17"/>
+        <line id="p2" x1="150" y1="79" x2="150" y2="135"/>
+        <line id="p3" x1="150" y1="90" x2="125" y2="118"/>
+        <line id="p4" x1="150" y1="90" x2="175" y2="118"/>
+        <line id="p5" x1="150" y1="135" x2="128" y2="172"/>
+        <line id="p6" x1="150" y1="135" x2="172" y2="172"/>
+      </g>
+    </svg>
+    <p id="lives" class="lives"></p>
+    <p id="hint" class="hint"></p>
+    <div id="word" class="word"></div>
+    <p id="message" class="message"></p>
+    <div id="keyboard" class="keyboard"></div>
+    <button id="new" class="new">New Game</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
